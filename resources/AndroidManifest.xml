@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="32" android:compileSdkVersionCodename="13" package="com.akshat.unionqr" platformBuildVersionCode="32" platformBuildVersionName="13">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:theme="@style/Theme.QRCODE" android:label="UnionQR" android:icon="@drawable/logoresized" android:allowBackup="true" android:supportsRtl="true" android:extractNativeLibs="false" android:roundIcon="@drawable/logoresized" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true" android:requestLegacyExternalStorage="true">
+        <activity android:name="com.iamsahil.qrcode.send" android:exported="false"/>
+        <activity android:name="com.iamsahil.qrcode.home" android:exported="false"/>
+        <activity android:name="com.iamsahil.qrcode.about" android:exported="false"/>
+        <activity android:name="com.iamsahil.qrcode.splashscreen" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.iamsahil.qrcode.qrcode" android:exported="true"/>
+        <activity android:name="com.iamsahil.qrcode.MainActivity" android:exported="true"/>
+        <activity android:theme="@style/Dexter.Internal.Theme.Transparent" android:name="com.karumi.dexter.DexterActivity"/>
+        <activity android:theme="@style/zxing_CaptureTheme" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.akshat.unionqr.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

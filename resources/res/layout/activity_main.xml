@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="270dp" android:layout_height="270dp" android:layout_marginTop="45dp" android:src="@drawable/upperillu"/>
+        <TextView android:textColor="@color/grey" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="35dp" android:text="name"/>
+        <soup.neumorphism.NeumorphCardView android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" app:neumorph_shapeType="1" style="@style/Widget.Neumorph.CardView">
+            <EditText android:textColor="@color/grey" android:textColorHint="@color/lightgrey" android:id="@+id/pa" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:hint=" name on upi" android:textCursorDrawable="@drawable/cursor" android:fontFamily="sans-serif-light" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+        <TextView android:textColor="@color/grey" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:text="upi"/>
+        <soup.neumorphism.NeumorphCardView android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" app:neumorph_shapeType="1" style="@style/Widget.Neumorph.CardView">
+            <EditText android:textColor="@color/grey" android:textColorHint="@color/lightgrey" android:id="@+id/paemail" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:hint=" enter your upi" android:textCursorDrawable="@drawable/cursor" android:fontFamily="sans-serif-light" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphButton android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp" android:text="go" android:textAlignment="center" app:neumorph_backgroundColor="@color/red" style="@style/Widget.Neumorph.Button"/>
+        <TextView android:textSize="12sp" android:textColor="@color/grey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="From : Akshat Shukla " android:fontFamily="sans-serif-light" android:textAlignment="center"/>
+    </LinearLayout>
+</ScrollView>
