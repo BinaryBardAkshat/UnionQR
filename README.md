@@ -1,6 +1,5 @@
 # Union QR 📱💳
 
-![Union QR Logo](res/drawable-v24/logoo.png)
 
 Welcome to Union QR! A simple yet powerful payment app by Akshat Shukla that enables effortless transactions between merchants using just a name and UPI ID.
 
